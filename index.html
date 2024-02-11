@@ -1,112 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跳动的心</title>
-    <style> 
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .wangCode{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #232e6d;
-          height: 100vh;
-        }
-        .wangCode ul {
-            height: 200px;
-        }
-        .wangCode ul li{
-            width: 20px;
-            height: 20px;
-            border-radius: 20px;
-            margin-right: 20px;
-            float: left;
-        }
-        li:nth-child(1){
-            animation: love1 4s infinite;
-            background-color: red;
-        }
-        li:nth-child(2){
-            animation: love2 4s infinite;
-            background-color: hotpink;
-            animation-delay: 0.15s;
-        }
-        li:nth-child(3){
-            animation: love3 4s infinite;
-            background-color: yellowgreen;
-            animation-delay: 0.3s;
-        }
-        li:nth-child(4){
-            animation: love4 4s infinite;
-            background-color: palegreen;
-            animation-delay: 0.45s;
-        }
-        li:nth-child(5){
-            animation: love5 4s infinite;
-            background-color:peru;
-            animation-delay: 0.6s;
-        }
-        li:nth-child(6){
-            animation: love4 4s infinite;
-            background-color: rgb(0, 255, 0);
-            animation-delay: 0.75s;
-        }
-        li:nth-child(7){
-            animation: love3 4s infinite;
-            background-color: salmon;
-            animation-delay: 0.9s;
-        }
-        li:nth-child(8){
-            animation: love2 4s infinite;
-            background-color: blueviolet;
-            animation-delay: 1.05s;
-        }
-        li:nth-child(9){
-            animation: love1 4s infinite;
-            background-color: pink;
-            animation-delay: 0.15s;
-        }
-        @keyframes love1 {
-            30%,50%{height: 60px;transform: translateY(-30px);}
-            70%,100%{height: 20px;transform: translateY(0px);}
-        }
-        @keyframes love2 {
-            30%,50%{height: 125px;transform: translateY(-60px);}
-            70%,100%{height: 20px;transform: translateY(0px);}
-        }
-        @keyframes love3 {
-            30%,50%{height: 160px;transform: translateY(-75px);}
-            70%,100%{height: 20px;transform: translateY(0px);}
-        }
-        @keyframes love4 {
-            30%,50%{height: 180px;transform: translateY(-60px);}
-            70%,100%{height: 20px;transform: translateY(0px);}
-        }
-        @keyframes love5 {
-            30%,50%{height: 190px;transform: translateY(-45px);}
-            70%,100%{height: 20px;transform: translateY(0px);}
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geek Profile - 安安</title>
+<style>
+  body, html {
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #08f;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #08f;
+  }
+  .profile-info {
+    text-align: left;
+  }
+  .profile-info h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #08f;
+  }
+  .profile-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 50px;
+  }
+  .rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .rain span {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #08f;
+    opacity: 0.5;
+    animation: codeRain linear infinite;
+  }
+  @keyframes codeRain {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="wangCode">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
+<div class="container">
+  <div class="header">
+    <h1>Geek Profile - 安安</h1>
+  </div>
+  <div class="profile">
+    <img src="https://pb.nichi.co/craft--couple" alt="Profile Picture">
+    <div class="profile-info">
+      <h2>安安</h2>
+      <p>编程爱好者</p>
+      <p>B站：郑乃千古第一帝</p>
     </div>
+  </div>
+  <div class="footer">
+    爱你们，爱我的妈妈
+  </div>
+</div>
+<div class="rain">
+  <!-- 生成代码雨 -->
+  <span style="top: 10%; left: 10%;">0x000000</span>
+  <span style="top: 20%; left: 20%;">0x0000FF</span>
+  <span style="top: 30%; left: 30%;">0x00FF00</span>
+  <!-- 更多代码雨 -->
+</div>
 </body>
 </html>
